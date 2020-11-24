@@ -76,6 +76,6 @@ spring:
       max-connections: 50
     packages:
       trust-all: true   #是否信任所有包，信任后所有包内的对象均可序列化传输
-  jms:
-    #开启activemq发布订阅模式
-    pub-sub-domain: true
+#  jms:
+#    #开启activemq发布订阅模式,现为了同时支持两种模式，改为代码实现
+#    pub-sub-domain: true

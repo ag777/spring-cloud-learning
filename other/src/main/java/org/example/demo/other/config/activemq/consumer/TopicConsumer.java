@@ -11,17 +11,17 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class TopicConsumer {
-    @JmsListener(destination = "message.topic")
+    @JmsListener(destination = "message.topic", containerFactory="jmsListenerContainerTopic")
     public void receiver1(QueenMessage queenMessage) {
         System.out.println("消费者1 : " + queenMessage);
     }
 
-    @JmsListener(destination = "message.topic")
+    @JmsListener(destination = "message.topic", containerFactory="jmsListenerContainerTopic")
     public void receiver2(QueenMessage queenMessage) {
         System.out.println("消费者2  : " + queenMessage);
     }
 
-    @JmsListener(destination = "message.topic")
+    @JmsListener(destination = "message.topic", containerFactory="jmsListenerContainerTopic")
     public void receiver3(QueenMessage queenMessage) {
         System.out.println("消费者3  : " + queenMessage);
     }
