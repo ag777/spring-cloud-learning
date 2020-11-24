@@ -1,0 +1,57 @@
+#server:
+#  port: 8001
+#  servlet:
+#    context-path:
+#
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: error
+#    # openfeign 日志等级
+#    root: debug
+#
+#spring:
+#  application:
+#    name: service-customer
+#  cloud:
+#    loadbalancer:
+#      retry:
+#        #开启请求重试，默认值就是true。Ribbon的重试设置，不能和feign的一起开,否则真是重试次数为二者的笛卡尔积
+#        enabled: true
+#ribbon:
+#  eager-load:
+#    enabled: true   #开启饥饿加载
+#    clients: service-customer  #饥饿加载的服务
+#  #请求重试设置,配置类:RibbonPropertie
+#  #请求连接的超时时间
+#  ConnectTimeout: 15000
+#  #请求处理的超时时间。
+#  #ReadTimeout:
+#  #对所有操作请求都进行重试，默认只对GET请求重试。
+#  OkToRetryOnAllOperations: true
+#  #切换实例的重试次数，默认为1。
+#  MaxAutoRetriesNextServer: 1
+#  #对当前实例的重试次数。默认为1。
+#  MaxAutoRetries: 1
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/eureka/
+#feign:
+#  okhttp:
+#    enabled: true
+#  compression:
+#    request:
+#      # 配置请求GZIP压缩
+#      enabled: true
+#      # 配置压缩支持的MIME TYPE
+#      mime-types: text/xml,application/xml,application/json
+#      # 配置压缩数据大小的下限
+#      min-request-size: 2048
+#    # 配置响应GZIP压缩
+#    response:
+#      enabled: true
+
+
+

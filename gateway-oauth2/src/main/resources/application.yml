@@ -1,0 +1,47 @@
+server:
+  port: 8000
+
+logging:
+  level:
+    root: error
+    org:
+      springframework:
+        web: error
+
+
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    gateway:
+      discovery:
+        #开启自动构建功能将自动转发对应服务的请求，如:service-customer/test将转发给customer服务的/test接口上
+#        locator:
+#          #自动根据服务ID建立路由
+#          enabled: true
+#          #服务名小写
+#          lower-case-service-id: true
+      routes:
+        - id: service-oauth
+          uri: lb://service-oauth
+          predicates:              # 请求转发判断条件
+            - Path=/uaa/**    # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+          filters:
+            - RewritePath=/uaa/(?<segment>.*), /$\{segment}
+        - id: service-shop
+          uri: lb://service-shop
+          predicates:              # 请求转发判断条件
+            - Path=/shop/**    # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+          filters:
+            - RewritePath=/shop/(?<segment>.*), /$\{segment}
+        - id: service-customer
+          uri: lb://service-customer
+          predicates:              # 请求转发判断条件
+            - Path=/customer/**    # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+          filters:
+            - RewritePath=/customer/(?<segment>.*), /$\{segment}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/eureka/

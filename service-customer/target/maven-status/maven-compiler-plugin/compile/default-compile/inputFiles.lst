@@ -1,0 +1,6 @@
+E:\programming\idea\SpringSecurityTest2\service-customer\src\main\java\org\example\demo\customer\CustomerApplication.java
+E:\programming\idea\SpringSecurityTest2\service-customer\src\main\java\org\example\demo\customer\feign\fallback\ShopFallback.java
+E:\programming\idea\SpringSecurityTest2\service-customer\src\main\java\org\example\demo\customer\config\feign\FeignConfig.java
+E:\programming\idea\SpringSecurityTest2\service-customer\src\main\java\org\example\demo\customer\feign\ShopService.java
+E:\programming\idea\SpringSecurityTest2\service-customer\src\main\java\org\example\demo\customer\web\test\controller\TestController.java
+E:\programming\idea\SpringSecurityTest2\service-customer\src\main\java\org\example\demo\customer\config\SecurityConfig.java

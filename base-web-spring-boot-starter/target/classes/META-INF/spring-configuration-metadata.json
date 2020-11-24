@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "com.example.demo.security",
+      "type": "org.example.demo.base.model.MySecurityProperties",
+      "sourceType": "org.example.demo.base.model.MySecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.example.demo.security.cors-allowed-methods",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.example.demo.base.model.MySecurityProperties"
+    },
+    {
+      "name": "com.example.demo.security.cors-allowed-origins",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.example.demo.base.model.MySecurityProperties"
+    },
+    {
+      "name": "com.example.demo.security.csrf-disabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.example.demo.base.model.MySecurityProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "com.example.demo.security.dev-opening-u-r-i",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.example.demo.base.model.MySecurityProperties"
+    },
+    {
+      "name": "com.example.demo.security.permit-all-u-r-i",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.example.demo.base.model.MySecurityProperties"
+    }
+  ],
+  "hints": []
+}
