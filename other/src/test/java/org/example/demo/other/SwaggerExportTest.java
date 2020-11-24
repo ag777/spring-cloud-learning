@@ -25,7 +25,7 @@ import java.nio.file.Paths;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class SwaggerExportTest {
 
-     @Value("server.port")
+     @Value("${server.port}")
      int port;
 
     @Test
