@@ -3,8 +3,6 @@ package org.example.demo.resource.config.utils;
 import io.minio.*;
 import io.minio.errors.*;
 import org.example.demo.resource.config.minio.MinIOProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -14,12 +12,12 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ * 官方接口:https://docs.min.io/cn/javascript-client-api-reference.html
  * @author ag777 <837915770@vip.qq.com>
  * @Date: 2020/11/23 18:06
  */
 @Component
-@Configuration
-@EnableConfigurationProperties({MinIOProperties.class})
+//@EnableConfigurationProperties({MinIOProperties.class})
 public class MinIOTemplate {
 
     private MinIOProperties minIo;
@@ -106,6 +104,19 @@ public class MinIOTemplate {
                         inputStream, -1, 10485760)
                         .build());
 
+    }
+
+    /**
+     * 文件下载
+     * @param bucketName bucket名称
+     * @param objectName 对象名称，文件名称
+     * @return inputstream
+     */
+    public GetObjectResponse getObject(String bucketName, String objectName) throws IOException, InvalidKeyException, InvalidResponseException, InsufficientDataException, NoSuchAlgorithmException, ServerException, InternalException, XmlParserException, ErrorResponseException {
+        return instance.getObject(GetObjectArgs.builder()
+                .bucket(bucketName)
+                .object(objectName)
+                .build());
     }
 
     /**

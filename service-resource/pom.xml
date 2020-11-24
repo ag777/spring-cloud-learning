@@ -37,6 +37,11 @@
             <artifactId>minio</artifactId>
             <version>8.0.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.ag777</groupId>
+            <artifactId>utils</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

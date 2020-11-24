@@ -4,10 +4,6 @@ logging:
       springframework:
         web: error
     root: error
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-#  mapper-locations: classpath*:org/example/**/mapper/*.xml
 
 server:
   port: 8300

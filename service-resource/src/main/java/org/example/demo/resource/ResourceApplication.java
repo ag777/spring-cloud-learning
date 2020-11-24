@@ -2,11 +2,10 @@ package org.example.demo.resource;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * 双数据源, swagger
+ * minio: 界面:http://localhost:9000/ admin/admin123456
  */
 @SpringBootApplication
 @ComponentScan(value = {"org.example.demo"})
