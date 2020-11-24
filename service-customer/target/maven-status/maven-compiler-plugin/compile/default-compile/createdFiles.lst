@@ -1,6 +1,0 @@
-org\example\demo\customer\feign\ShopService.class
-org\example\demo\customer\web\test\controller\TestController.class
-org\example\demo\customer\config\feign\FeignConfig.class
-org\example\demo\customer\config\SecurityConfig.class
-org\example\demo\customer\feign\fallback\ShopFallback.class
-org\example\demo\customer\CustomerApplication.class

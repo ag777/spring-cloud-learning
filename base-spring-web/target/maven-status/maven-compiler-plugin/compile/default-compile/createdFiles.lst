@@ -1,6 +1,0 @@
-org\example\demo\base\config\filter\GlobalRequestAdvice.class
-org\example\demo\base\exception\CustomException.class
-org\example\demo\base\config\filter\GlobalResponseAdvice.class
-org\example\demo\base\exception\CustomExceptionType.class
-org\example\demo\base\config\filter\GlobalExceptionHandler.class
-org\example\demo\base\model\AjaxResponse.class

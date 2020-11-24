@@ -1,6 +1,0 @@
-E:\programming\idea\SpringSecurityTest2\gateway\src\main\java\com\example\demo\gateway\GatewayApplication.java
-E:\programming\idea\SpringSecurityTest2\gateway\src\main\java\com\example\demo\gateway\config\filter\MyLoadBalancerClientFilter.java
-E:\programming\idea\SpringSecurityTest2\gateway\src\main\java\com\example\demo\gateway\config\filter\part\IPForbidGatewayFilterFactory.java
-E:\programming\idea\SpringSecurityTest2\gateway\src\main\java\com\example\demo\gateway\config\filter\global\GlobalGatewayFilterConfig.java
-E:\programming\idea\SpringSecurityTest2\gateway\src\main\java\com\example\demo\gateway\config\RbacAuthRoutePredicateFactory.java
-E:\programming\idea\SpringSecurityTest2\gateway\src\main\java\com\example\demo\gateway\config\filter\part\AddParamGatewayFilterFactory.java

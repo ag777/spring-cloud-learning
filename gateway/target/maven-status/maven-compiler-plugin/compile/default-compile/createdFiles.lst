@@ -1,9 +1,0 @@
-com\example\demo\gateway\config\filter\global\GlobalGatewayFilterConfig.class
-com\example\demo\gateway\config\filter\part\AddParamGatewayFilterFactory.class
-com\example\demo\gateway\config\filter\MyLoadBalancerClientFilter.class
-com\example\demo\gateway\config\RbacAuthRoutePredicateFactory$Config.class
-com\example\demo\gateway\config\filter\part\IPForbidGatewayFilterFactory$Config.class
-com\example\demo\gateway\config\filter\part\AddParamGatewayFilterFactory$Config.class
-com\example\demo\gateway\GatewayApplication.class
-com\example\demo\gateway\config\filter\part\IPForbidGatewayFilterFactory.class
-com\example\demo\gateway\config\RbacAuthRoutePredicateFactory.class
